@@ -55,17 +55,19 @@ export default function Quiz() {
 
   if (showResults) {
     return (
-      <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 text-center py-8">
-        <h2 className="text-3xl font-semibold text-green-600 mb-4">🎉 Quiz Completed!</h2>
+      <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-r from-indigo-500 to-blue-500 text-center py-8">
+       <div className="bg-white rounded-lg shadow-lg p-6 max-w-md w-full">
+        <h2 className="text-3xl font-semibold text-indigo-500 mb-4">🎉 Quiz Completed!</h2>
         <p className="text-xl mb-6">
           Your Score: <span className="font-bold">{score}</span> / {selectedQuestions.length}
         </p>
         <button
           onClick={handleRestart}
-          className="bg-green-500 text-white px-8 py-3 rounded-lg hover:bg-green-600 transition-all"
+          className="bg-indigo-500 text-white px-8 py-3 rounded-lg hover:bg-gradient-to-r from-indigo-500 to-blue-500 transition-all"
         >
           Try Again
         </button>
+        </div>
       </div>
     );
   }
