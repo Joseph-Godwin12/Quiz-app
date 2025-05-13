@@ -1,7 +1,7 @@
 import frontendQuiz from './frontend';
 import backendQuiz from './backend';
 import dataScienceQuiz from './dataScience';
-import devOpsQuiz from './devOps';
+import devOpsQuiz from './devops';
 import cybersecurityQuiz from './cyberSecurity';
 import uiuxQuiz from './uiux';
 
